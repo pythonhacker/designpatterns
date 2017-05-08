@@ -18,7 +18,7 @@ class SingletonS(object):
         self.x = x
 
     def __setattr__(self, key, value):
-        # For all lookups other than 'd'
+        # For all lookups other than '_shared'
         # set value in the shared dictionary
         if key == '_shared':
             self.__dict__[key] = value
@@ -29,5 +29,7 @@ class SingletonS(object):
         if key in self.__dict__:
             return self.__dict__[key]
 
+
+        # Lookups via shared memory
         return self._shared[key]
         
