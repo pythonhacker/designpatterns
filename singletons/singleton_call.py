@@ -15,5 +15,5 @@ class MetaSingletonC(type):
         return cls.instance
 
 class SingletonC(metaclass=MetaSingletonC):
-    """ A singleton class using the MetaSingletonN class as metaclass """
+    """ A singleton class using the MetaSingletonC class as metaclass """
     pass
