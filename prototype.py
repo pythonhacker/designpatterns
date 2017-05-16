@@ -87,7 +87,7 @@ def test_prototype_factory(instance, attr):
     factory = prototype_factory.PrototypeFactory()
     factory.register(instance)
 
-    print('Makine a clone of',instance)
+    print('Making a clone of',instance)
     klone = factory.clone(instance.__class__)
     assert(klone != instance)
     print('Verified',klone,'is different from original instance',instance)
