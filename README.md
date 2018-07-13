@@ -1,5 +1,3 @@
-# Python Design-Pattern of The Week
-
 ## A Pythonic approach to Design Patterns
 
 This repo hosts a set of implementations of G4 design-patterns in idiomatic Python.
